@@ -1,5 +1,7 @@
 
-## Setup
+# Setup
+
+This is what I like to install. Stored here for easier access between machines.
 
 ### Brew
 
