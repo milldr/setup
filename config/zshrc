@@ -10,8 +10,8 @@ setopt PROMPT_SUBST
 #PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 PROMPT='%F{yellow}%~%f %F{red}${vcs_info_msg_0_}%f$ '
 
-# TODO install this first
-source /Users/milldr/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# install this first
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 setopt histignorealldups sharehistory
@@ -85,22 +85,6 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-# Init asdf for version management
-# . /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-# Save time by using already built openssl
-RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
-
-# Save time by using already built openssl
-RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
-
-# Save time by using already built openssl
-RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
-
-# Save time by using already built openssl
-RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
-
-source "$HOME/.cargo/env"
 ssh-add "$HOME/.ssh/id_ed25519"
 
 alias bash="/usr/local/bin/bash"
@@ -115,6 +99,6 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-source ~/.rvm/scripts/rvm
-export PATH="/usr/local/Cellar/libpq/15.3_1/bin:$PATH"
+# export PATH="$PATH:$HOME/.rvm/bin"
+# source ~/.rvm/scripts/rvm
+# export PATH="/usr/local/Cellar/libpq/15.3_1/bin:$PATH"

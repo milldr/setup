@@ -6,6 +6,11 @@ cask "iterm2"
 cask "docker"
 cask "slack"
 
+brew "coreutils"
+brew "curl"
+brew "git"
+# brew "asdf"
+
 brew "pre-commit"
 brew "terraform-docs" 
 brew "tflint"
@@ -17,3 +22,6 @@ brew "tfupdate"
 brew "jq"
 brew "tree"
 brew "adr-tools"
+
+brew "zsh-syntax-highlighting"
+brew "nvim"
