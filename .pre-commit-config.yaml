@@ -18,6 +18,9 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
+      # Secrets
+      - id: detect-private-key
+
       # Git style
       - id: check-added-large-files # prevents giant files from being committed.
       - id: forbid-new-submodules # prevents addition of new git submodules.
@@ -29,10 +32,9 @@ repos:
       - id: check-merge-conflict # checks for files that contain merge conflict strings.
       - id: check-executables-have-shebangs # ensures that (non-binary) executables have a shebang.
 
-      # Cross platform
+      # Styling
       - id: check-case-conflict # checks for files that would conflict in case-insensitive filesystems.
       - id: mixed-line-ending # replaces or checks mixed line ending.
         args: [--fix=lf]
-
-      # YAML
       - id: check-yaml  # checks yaml files for parseable syntax.
+      - id: requirements-txt-fixer
