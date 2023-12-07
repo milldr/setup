@@ -109,8 +109,6 @@ alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
 
-export OPENAI_API_KEY="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"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
