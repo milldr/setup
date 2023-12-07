@@ -36,3 +36,9 @@ repos:
         args: [--fix=lf]
       - id: check-yaml  # checks yaml files for parseable syntax.
       - id: requirements-txt-fixer
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
