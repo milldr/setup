@@ -1,0 +1,109 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'pedrohdz/vim-yaml-folds'
+Plugin 'sheerun/vim-polyglot'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'dense-analysis/ale'
+" Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" Show line numbers
+set number
+
+" Show file stats
+set ruler
+
+" Blink cursor on error instead of beeping
+set visualbell
+
+" Encoding
+set encoding=utf-8
+
+" Whitespace
+set wrap
+" textwidth will automatically press enter for you if > 0
+set textwidth=0
+set formatoptions=tcqrn1
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set noshiftround
+
+" Cursor motion
+set scrolloff=10
+set backspace=indent,eol,start
+
+" Last line
+set showmode
+set showcmd
+
+" Searching
+set ignorecase
+set smartcase
+set showmatch
+
+" Visualize tabs and newlines
+set listchars=tab:_\ ,eol:_
+" Uncomment this to enable by default:
+" set list " To enable by default
+" Or use your leader key + l to toggle on/off
+
+" disable screen flash
+set t_vb=
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " => vim-airline config
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:airline_theme='hybridline'
+" " let g:airline_theme='custom'
+"
+" " Enable the list of buffers
+" let g:airline#extensions#tabline#enabled = 1
+"
+" " Show just the filename
+" let g:airline#extensions#tabline#fnamemod = ':t'
+"
+" " Airline fonts
+" let g:airline_powerline_fonts = 1
+"
+" let g:airline_skip_empty_sections = 1
+"
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
+"
+" " let g:airline_symbols.maxlinenr=''
+" let g:airline_symbols.linenr=''
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " => Asynchronous Lint Engine (ALE)
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " Set this. Airline will handle the rest.
+" let g:airline#extensions#ale#enabled = 1
+" let g:ale_fix_on_save = 1
+" let g:ale_lint_on_text_changed = 1
+" let g:ale_linters_explicit = 0
+"
+" let g:ale_fixers = {
+" \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+" \   'javascript': ['eslint'],
+" \}
+
+hi SpellBad cterm=underline
+" Set style for gVim
+hi SpellBad gui=undercurl
+
+syntax on
+
+hi clear SpellBad
+hi SpellBad cterm=underline
+

@@ -1,0 +1,122 @@
+# Set up the prompt
+
+# https://dev.to/cassidoo/customizing-my-zsh-prompt-3417
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+zstyle ':vcs_info:git:*' formats '%b '
+
+setopt PROMPT_SUBST
+#PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+PROMPT='%F{yellow}%~%f %F{red}${vcs_info_msg_0_}%f$ '
+
+# TODO install this first
+source /Users/milldr/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+setopt histignorealldups sharehistory
+HISTSIZE=100000
+SAVEHIST=100000
+HISTFILE=~/.zsh_history
+
+# Use modern completion system
+autoload -Uz compinit
+compinit
+
+zstyle ':completion:*' auto-description 'specify: %d'
+zstyle ':completion:*' completer _expand _complete _correct _approximate
+zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' menu select=2
+
+if whence dircolors >/dev/null; then
+  eval "$(dircolors -b)"
+  zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+  alias ls='ls --color'
+else
+  export CLICOLOR=1
+  zstyle ':completion:*:default' list-colors ''
+fi
+
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+export VISUAL=nvim;
+export EDITOR=nvim;
+
+export GOPATH=~/go
+export PATH=$PATH:~/.local/bin/:$GOPATH/bin/
+
+alias pbcopy="xclip -selection clipboard"
+alias pbpaste="xclip -selection clipboard -o"
+alias python="python3"
+alias tree="tree -a -L 2 -I 'node_modules|.git|__pycache__|.pytest_cache|jest_*|coverage'"
+alias ls="ls -al"
+alias grep="grep --exclude-dir=\".terraform*\" -I"
+alias context="curl -sL https://raw.githubusercontent.com/cloudposse/terraform-null-label/master/exports/context.tf -o context.tf"
+alias gm="git add --all && git commit -m"
+alias c="code"
+
+# # start typing + [Up-Arrow] - fuzzy find history forward
+# if [[ "${terminfo[kcuu1]}" != "" ]]; then
+#     autoload -U up-line-or-beginning-search
+#     zle -N up-line-or-beginning-search
+#     bindkey "${terminfo[kcuu1]}" up-line-or-beginning-search
+# fi
+# # start typing + [Down-Arrow] - fuzzy find history backward
+# if [[ "${terminfo[kcud1]}" != "" ]]; then
+#     autoload -U down-line-or-beginning-search
+#     zle -N down-line-or-beginning-search
+#     bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
+# fi
+
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search # Up
+bindkey "^[[B" down-line-or-beginning-search # Down
+
+# Init asdf for version management
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# Save time by using already built openssl
+RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
+
+# Save time by using already built openssl
+RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
+
+# Save time by using already built openssl
+RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
+
+# Save time by using already built openssl
+RUBY_CONFIGURE_OPTS="--with-openssl-dir=/usr/local/opt/openssl@1.1"
+
+source "$HOME/.cargo/env"
+ssh-add "$HOME/.ssh/id_ed25519"
+
+alias bash="/usr/local/bin/bash"
+
+alias vim="nvim"
+alias vi="nvim"
+alias v="nvim"
+
+export OPENAI_API_KEY="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"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source ~/.rvm/scripts/rvm
+export PATH="/usr/local/Cellar/libpq/15.3_1/bin:$PATH"
