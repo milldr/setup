@@ -26,6 +26,7 @@ brew bundle
 DIR=~/.git-template
 git config --global init.templateDir ${DIR}
 pre-commit init-templatedir -t pre-commit ${DIR}
+pre-commit install
 ```
 
 ### Neovim
@@ -44,7 +45,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 
 Install plugins. Start neovim and run `PlugInstall`
- 
+
 
 ### iterm2
 
@@ -74,5 +75,3 @@ pip3 install -r requirements.txt
 ### Additional Setup
 
 Harvest: https://apps.apple.com/us/app/harvest/id506189836?ls=1&mt=12
-
-
