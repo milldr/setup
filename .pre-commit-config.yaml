@@ -5,7 +5,6 @@ repos:
       # Git style
       - id: check-added-large-files # prevents giant files from being committed.
       - id: forbid-new-submodules # prevents addition of new git submodules.
-      - id: no-commit-to-branch # don't commit to branch
 
       # Common errors
       - id: trailing-whitespace # trims trailing whitespace.
