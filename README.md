@@ -72,6 +72,12 @@ python3 -m pip install --upgrade pip
 pip3 install -r requirements.txt
 ```
 
+### make
+
+```console
+PATH="$HOMEBREW_PREFIX/opt/make/libexec/gnubin:$PATH"
+```
+
 ### Additional Setup
 
 Harvest: https://apps.apple.com/us/app/harvest/id506189836?ls=1&mt=12

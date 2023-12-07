@@ -15,6 +15,7 @@ brew "git"
 brew "python"
 brew "jq"
 # brew "asdf"
+brew "make"
 
 # Personalization
 brew "zsh-syntax-highlighting"
@@ -23,7 +24,7 @@ brew "tree"
 
 # Linting/TF packages
 brew "pre-commit"
-brew "terraform-docs" 
+brew "terraform-docs"
 brew "tflint"
 brew "tfsec"
 brew "checkov"
