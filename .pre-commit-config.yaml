@@ -1,4 +1,20 @@
 repos:
+  - repo: local
+    hooks:
+      - id: zsh
+        name: copy zsh
+        entry: bash -c 'cp ~/.zshrc config/zshrc'
+        language: system
+        types: ["text"]
+        pass_filenames: false
+
+      - id: nvim
+        name: copy neovim
+        entry: bash -c 'cp -r ~/.config/nvim config/'
+        language: system
+        types: ["text"]
+        pass_filenames: false
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
@@ -20,13 +36,3 @@ repos:
 
       # YAML
       - id: check-yaml  # checks yaml files for parseable syntax.
-
-  - repo: local
-    hooks:
-      - id: zsh
-        name: Copy ZSH
-        entry: bash -c 'cp ~/.zshrc config/zshrc'
-        language: system
-        types: ["text"]
-          #files: (mixins\/.*|bin\/rebuild-mixins-docs\.sh)
-        pass_filenames: false
