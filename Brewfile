@@ -5,6 +5,7 @@ cask "leapp"
 cask "iterm2"
 cask "docker"
 cask "slack"
+cask "setapp"
 
 brew "coreutils"
 brew "curl"
