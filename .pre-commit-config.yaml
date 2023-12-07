@@ -5,14 +5,12 @@ repos:
         name: copy zsh
         entry: bash -c 'cp ~/.zshrc config/zshrc'
         language: system
-        types: ["text"]
         pass_filenames: false
 
       - id: nvim
         name: copy neovim
         entry: bash -c 'cp -r ~/.config/nvim config/'
         language: system
-        types: ["text"]
         pass_filenames: false
 
   - repo: https://github.com/pre-commit/pre-commit-hooks

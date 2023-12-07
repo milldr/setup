@@ -54,6 +54,7 @@ export EDITOR=nvim;
 
 export GOPATH=~/go
 export PATH=$PATH:~/.local/bin/:$GOPATH/bin/
+export PATH="$HOMEBREW_PREFIX/opt/make/libexec/gnubin:$PATH"
 
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
