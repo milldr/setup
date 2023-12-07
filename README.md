@@ -73,6 +73,6 @@ pip3 install -r requirements.txt
 
 ### Additional Setup
 
-Harvest
+Harvest: https://apps.apple.com/us/app/harvest/id506189836?ls=1&mt=12
 
 
