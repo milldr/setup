@@ -1,3 +1,4 @@
+# Cask apps
 tap "homebrew/cask"
 cask "zoom"
 cask "google-chrome"
@@ -7,11 +8,20 @@ cask "docker"
 cask "slack"
 cask "setapp"
 
+# Core packages
 brew "coreutils"
 brew "curl"
 brew "git"
+brew "python"
+brew "jq"
 # brew "asdf"
 
+# Personalization
+brew "zsh-syntax-highlighting"
+brew "nvim"
+brew "tree"
+
+# Linting/TF packages
 brew "pre-commit"
 brew "terraform-docs" 
 brew "tflint"
@@ -20,11 +30,4 @@ brew "checkov"
 brew "terrascan"
 brew "infracost"
 brew "tfupdate"
-brew "jq"
-brew "tree"
 brew "adr-tools"
-
-brew "zsh-syntax-highlighting"
-brew "nvim"
-
-brew "python"
