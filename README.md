@@ -56,6 +56,20 @@ Setup iTerm2 to automatically load and update settings:
 
 ### zsh
 
+Copy config
+
+```console
+cp config/zshrc ~/.zshrc
+```
+
+### python
+
+Upgrade pip and install all requirements
+
+```console
+python3 -m pip install --upgrade pip
+pip3 install -r requirements.txt
+```
 
 ### Additional Setup
 

@@ -26,3 +26,5 @@ brew "adr-tools"
 
 brew "zsh-syntax-highlighting"
 brew "nvim"
+
+brew "python"
