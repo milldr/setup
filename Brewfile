@@ -16,11 +16,13 @@ brew "python"
 brew "jq"
 # brew "asdf"
 brew "make"
+brew "atmos"
 
 # Personalization
 brew "zsh-syntax-highlighting"
 brew "nvim"
 brew "tree"
+brew "yq"
 
 # Linting/TF packages
 brew "pre-commit"
