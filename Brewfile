@@ -1,13 +1,13 @@
 # Cask apps
 tap "homebrew/cask"
-cask "zoom"
-cask "google-chrome"
-cask "leapp"
-cask "iterm2"
 cask "docker"
-cask "slack"
-cask "setapp"
+cask "google-chrome"
+cask "iterm2"
+cask "leapp"
 cask "session-manager-plugin"
+cask "setapp"
+cask "slack"
+cask "zoom"
 
 # Core packages
 brew "coreutils"
