@@ -7,6 +7,7 @@ cask "iterm2"
 cask "docker"
 cask "slack"
 cask "setapp"
+cask "session-manager-plugin"
 
 # Core packages
 brew "coreutils"
@@ -17,6 +18,7 @@ brew "jq"
 # brew "asdf"
 brew "make"
 brew "atmos"
+brew "awscli"
 
 # Personalization
 brew "zsh-syntax-highlighting"
@@ -35,3 +37,6 @@ brew "infracost"
 brew "tfupdate"
 brew "adr-tools"
 brew "detect-secrets"
+brew "actionlint"
+brew "typos-cli"
+brew "reviewdog/tap/reviewdog"
