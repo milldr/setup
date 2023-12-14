@@ -81,3 +81,14 @@ PATH="$HOMEBREW_PREFIX/opt/make/libexec/gnubin:$PATH"
 ### Additional Setup
 
 Harvest: https://apps.apple.com/us/app/harvest/id506189836?ls=1&mt=12
+
+Rosetta is required for AWS VPN:
+
+```console
+sudo softwareupdate --install-rosetta
+```
+
+### Favorites, bookmarks
+
+- [excalidraw](https://app.excalidraw.com/)
+- [ChatGPT](https://chat.openai.com/)

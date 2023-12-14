@@ -8,6 +8,7 @@ cask "session-manager-plugin"
 cask "setapp"
 cask "slack"
 cask "zoom"
+cask "aws-vpn-client"
 
 # Core packages
 brew "coreutils"
@@ -20,6 +21,7 @@ brew "yq"
 brew "make"
 brew "atmos"
 brew "awscli"
+brew "terraform"
 
 # Personalization
 brew "zsh-syntax-highlighting"

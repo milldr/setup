@@ -1,4 +1,3 @@
-import neovim
 import requests
 
 def get_latest_release():
@@ -7,4 +6,3 @@ def get_latest_release():
 
 if __name__ == "__main__":
     print(get_latest_release())
-
