@@ -22,6 +22,7 @@ brew "make"
 brew "atmos"
 brew "awscli"
 brew "terraform"
+brew "go"
 
 # Personalization
 brew "zsh-syntax-highlighting"
@@ -42,3 +43,5 @@ brew "detect-secrets"
 brew "actionlint"
 brew "typos-cli"
 brew "reviewdog/tap/reviewdog"
+
+brew "vhs"
