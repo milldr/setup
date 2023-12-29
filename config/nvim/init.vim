@@ -7,6 +7,7 @@ call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform', {}
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'yioneko/nvim-yati', { 'tag': '*' }
 
 call plug#end()
 
@@ -54,3 +55,4 @@ hi Normal guibg=NONE ctermbg=NONE
 
 lua require('scripts')
 lua require('format')
+lua require('yati')

@@ -66,6 +66,8 @@ alias context="curl -sL https://raw.githubusercontent.com/cloudposse/terraform-n
 alias gm="git add --all && git commit -m"
 alias c="code"
 
+alias cat="bat"
+
 # # start typing + [Up-Arrow] - fuzzy find history forward
 # if [[ "${terminfo[kcuu1]}" != "" ]]; then
 #     autoload -U up-line-or-beginning-search

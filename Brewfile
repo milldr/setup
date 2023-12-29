@@ -45,3 +45,9 @@ brew "typos-cli"
 brew "reviewdog/tap/reviewdog"
 
 brew "vhs"
+brew "mdless"
+brew "bat"
+
+# npm
+brew "npm"
+brew "gh"
