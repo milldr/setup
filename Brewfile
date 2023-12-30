@@ -17,12 +17,17 @@ brew "git"
 brew "python"
 brew "jq"
 brew "yq"
-# brew "asdf"
 brew "make"
+
+# Core tools
 brew "atmos"
 brew "awscli"
+brew "gh"
+
+# Languages
 brew "terraform"
 brew "go"
+brew "npm"
 
 # Personalization
 brew "zsh-syntax-highlighting"
@@ -44,10 +49,7 @@ brew "actionlint"
 brew "typos-cli"
 brew "reviewdog/tap/reviewdog"
 
+# Misc. helpers
 brew "vhs"
 brew "mdless"
 brew "bat"
-
-# npm
-brew "npm"
-brew "gh"
