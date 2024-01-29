@@ -15,7 +15,7 @@ repos:
 
       - id: logseq
         name: copy logseq
-        entry: bash -c 'cp -r ~/.logseq/config/config.edn config/logseq/'
+        entry: bash -c 'cp -r ~/.logseq/ config/logseq/'
         language: system
         pass_filenames: false
 
