@@ -2,6 +2,7 @@
 tap "homebrew/cask"
 cask "docker"
 cask "google-chrome"
+cask "arc"
 cask "iterm2"
 cask "leapp"
 cask "session-manager-plugin"
@@ -9,6 +10,10 @@ cask "setapp"
 cask "slack"
 cask "zoom"
 cask "aws-vpn-client"
+
+# cask "loqseq"
+# Cask 'loqseq' is unavailable:
+# brew install --cask logseq
 
 # Core packages
 brew "coreutils"
