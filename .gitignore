@@ -1,2 +1,3 @@
 *.lock.json
 install-brew.sh
+.secrets*

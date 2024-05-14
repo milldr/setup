@@ -8,6 +8,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'hashivim/vim-terraform', {}
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'yioneko/nvim-yati', { 'tag': '*' }
+Plug 'sbdchd/neoformat'
 
 call plug#end()
 
@@ -41,6 +42,10 @@ set backspace=indent,eol,start
 " Last line
 set showmode
 set showcmd
+
+" Show characters
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+" set list
 
 " Searching
 set ignorecase
