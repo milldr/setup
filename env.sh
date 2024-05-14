@@ -1,2 +1,2 @@
 #!/bin/bash
-export $(grep -v '^#' .secrets | xargs -0)
+export $(grep -v '^#' .env | xargs -0)
