@@ -29,6 +29,13 @@ pre-commit init-templatedir -t pre-commit ${DIR}
 pre-commit install
 ```
 
+3. Setup `prepare-commit-msg` and `aicommit`: [ref](https://github.com/janniks/prepare-commit-msg/blob/master/README.md)
+
+```console
+sh <(curl -s https://raw.githubusercontent.com/janniks/prepare-commit-msg/master/scripts/install.sh)
+aicommits hook install
+```
+
 ### Neovim
 
 Neovim is installed in Brewfile. Copy config
