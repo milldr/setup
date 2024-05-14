@@ -1,3 +1,4 @@
 *.lock.json
 install-brew.sh
 .secrets*
+config/logseq/*
